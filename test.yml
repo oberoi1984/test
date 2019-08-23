@@ -1,9 +1,0 @@
----
-
-- hosts: all
-  gather_facts: yes
-  tasks:
-     - name: changing hostname
-       lineinfile:
-          path: "/etc/hosts"
-          line: "{{ansiblehosts}}"
